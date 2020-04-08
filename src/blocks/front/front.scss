@@ -1,0 +1,60 @@
+.front {
+  background-image: url("../img/front__bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    padding-bottom: 130px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  &__content {
+    .text-center {
+      padding-top: 150px;
+      font-family: "Fira Sans", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 60px;
+      font-size: 40px;
+      color: #000000;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .front {
+    .container {
+      padding-bottom: 362px;
+    }
+    
+    &__content {
+      .text-center {
+        padding-top: 362px;
+        font-weight: 500;
+        line-height: 101px;
+        font-size: 70px;
+      }
+    }
+
+    &__dscr {
+      width: 660px;
+      margin: 0 auto;
+      text-align: center;
+      color: #000000;
+    }
+  }
+}
+
+@include media-breakpoint-between(xs, sm) {
+
+  .front {
+    &__dscr {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

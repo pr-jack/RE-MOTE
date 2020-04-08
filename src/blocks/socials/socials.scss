@@ -1,0 +1,38 @@
+.socials {
+  display: flex;
+
+  &__item {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #E73741;
+    border-radius: 50%;
+
+    &--fb {
+      background-image: url("../img/fb.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:hover {
+        background: #EA555D;
+        background-image: url("../img/fb.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &--tw {
+      background-image: url("../img/tw.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 10px;
+
+      &:hover {
+        background: #EA555D;
+        background-image: url("../img/tw.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}

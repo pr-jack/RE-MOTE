@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 426px;
+  margin: 0 auto;
+  padding-top: 85px;
+
+  .button {
+    position: static;
+    margin: 0 auto;
+  }
+}
+
+.input {
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+
+  &--textarea {
+    height: 150px;
+  }
+}
+
+@include media-breakpoint-between(xs, sm) {
+  .form {
+    width: 100%;
+  }
+}
